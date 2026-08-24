@@ -1,9 +1,51 @@
 #+TITLE: Tucson Sonoran Desert Garden Calendar
-#+AUTHOR: Mathieu Renzo
+#+AUTHOR: Mathieu Renzo w/ chatGPT
 #+OPTIONS: title:nil toc:2
 #+STARTUP: overview
+#+DATE: <2026-08-23 Sun>
+#+BEGIN_EXPORT html
+<script>
+function jumpToNearestDate() {
+  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  let closest = null;
+  let closestDiff = Infinity;
+
+  for (const h of headers) {
+    const ts = h.querySelector("span.timestamp");
+    if (!ts) continue;
+
+    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+    if (!match) continue;
+
+    const parsed = new Date(match[1] + "T00:00:00");
+    const diff = Math.abs(parsed - today);
+
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closest = h;
+    }
+  }
+
+  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+</script>
+#+END_EXPORT
 
 * Tucson Sonoran Desert Garden Calendar
+
+#+BEGIN_EXPORT html
+<div style="text-align: center;">
+<button onclick="jumpToNearestDate()" title="Jump to today">
+  <a href="javascript:void(0);" title="Jump to today">
+    <i class="fa-solid fa-calendar-day"> Jump to today </i> <i class="fa-solid fa-calendar-day"></i>
+  </a>
+</button>
+</div>
+#+END_EXPORT
+
 A month-by-month field calendar for a Tucson garden in the Sonoran Desert.
 The calendar emphasizes early identification and removal of common invasive or
 unwanted weeds, while highlighting native Sonoran Desert plants to retain,
@@ -13,249 +55,425 @@ The timing is approximate: rainfall, irrigation, elevation, and microclimate can
 shift emergence and flowering by several weeks. Do not remove an unfamiliar
 volunteer merely because it looks weedy; identify it first.
 
-The weed-control recommendations are informed by University of Arizona
-Cooperative Extension, the Pima County Invasive Species Program, Arizona
-Invasive Plants, and Tucson Audubon. Native-plant choices are cross-checked
-against the 2026 Pima County Master Gardeners native-plant guide.
-
 ** January
-*** Remove / monitor
-- London rocket (*Sisymbrium irio*) — winter annual. Pull young rosettes and remove before seed production.
-- Sweet clover (*Melilotus indica*) — remove unwanted winter annuals while soil is moist and plants are small.
-- Stinknet (*Oncosiphon pilulifer*) — monitor newly emerging rosettes after winter rain; bag pulled plants.
-*** Encourage / plant
-- Parry's penstemon (*Penstemon parryi*) — native Sonoran Desert spring wildflower; excellent for hummingbirds.
-- Desert willow (*Chilopsis linearis*) — native tree for appropriate wash-like/moister landscape positions.
-*** Pictures
+*** To remove
+**** London rocket (Sisymbrium irio)
+Winter annual. Pull young rosettes and remove before seed production.
+
 [[file:images/london_rocket.png]]
+
+Source: [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
+
+**** Sweet clover (Melilotus indica)
+Remove unwanted winter annuals while soil is moist and plants are small.
+
+Source: [[https://extension.arizona.edu/publication/january-monthly-gardening-guide-pima-county][UA Cooperative Extension — January Monthly Gardening Guide for Pima County]]
+
+**** Stinknet (Oncosiphon pilulifer)
+Monitor newly emerging rosettes after winter rain; bag pulled plants.
+
+Source: [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
+
+*** To sustain plant
+**** Parry's penstemon (Penstemon parryi)
+Native Sonoran Desert spring wildflower; excellent for hummingbirds.
+
 [[file:images/parrys_penstemon.webp]]
-*** Sources
-- [[https://extension.arizona.edu/publication/january-monthly-gardening-guide-pima-county][UA Cooperative Extension — January Monthly Gardening Guide for Pima County]]
-- [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
-- [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
-- [[https://www.tucsonaz.gov/files/sharedassets/public/v/1/city-services/tucson-water/public-education-and-outreach/documents/cot_landscape_maintenance_manual_2021.pdf][City of Tucson — Landscape Maintenance Manual, Common Weeds in Tucson]]
+
+Source: [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
+
+**** Desert willow (Chilopsis linearis)
+Native tree for appropriate wash-like or moister landscape positions.
+
+Source: [[https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72][UA Campus Arboretum — Desert willow]]
 
 ** February
-*** Remove / monitor
-- London rocket (*Sisymbrium irio*) — often conspicuous and flowering now; pull before pods mature.
-- Stinknet (*Oncosiphon pilulifer*) — winter annual; remove flowering plants before seed set and bag them.
-- Sweet clover (*Melilotus indica*) — remove before flowering/seed production if unwanted.
-*** Encourage / plant
-- Parry's penstemon (*Penstemon parryi*) — spring bloom approaches; protect seedlings and avoid confusing them with mustard rosettes.
-- Fairy duster (*Calliandra eriophylla*) — native shrub; a good time to establish container-grown plants before extreme heat.
-*** Pictures
+*** To remove
+**** London rocket (Sisymbrium irio)
+Often conspicuous and flowering now; pull before pods mature.
+
+Source: [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
+
+**** Stinknet (Oncosiphon pilulifer)
+Remove flowering plants before seed set and bag them.
+
 [[file:images/stinknet_bloom.png]]
+
+Source: [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
+
+**** Sweet clover (Melilotus indica)
+Remove before flowering and seed production if unwanted.
+
+Source: [[https://extension.arizona.edu/publication/february-monthly-gardening-guide-pima-county][UA Cooperative Extension — February Monthly Gardening Guide for Pima County]]
+
+*** To sustain plant
+**** Parry's penstemon (Penstemon parryi)
+Spring bloom approaches; protect seedlings and avoid confusing them with mustard rosettes.
+
+Source: [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
+
+**** Fairy duster (Calliandra eriophylla)
+Native shrub; a good time to establish container-grown plants before extreme heat.
+
 [[file:images/fairy_duster.jpg]]
-*** Sources
-- [[https://extension.arizona.edu/publication/february-monthly-gardening-guide-pima-county][UA Cooperative Extension — February Monthly Gardening Guide for Pima County]]
-- [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
-- [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
+
+Source: [[https://aznps.com/the-plant-list/?species=calliandra+eriophylla][Arizona Native Plant Society — Fairy duster]]
 
 ** March
-*** Remove / monitor
-- London rocket (*Sisymbrium irio*) — pull before the long slender pods mature.
-- Stinknet (*Oncosiphon pilulifer*) — flowering is a critical control window; bag plants and do not let them seed.
-- Buffelgrass (*Cenchrus ciliaris*) — inspect landscaped and disturbed areas; remove before seed dispersal where feasible.
-*** Encourage / plant
-- Parry's penstemon (*Penstemon parryi*) — major spring display.
-- Desert marigold (*Baileya multiradiata*) — native, drought-tolerant wildflower with a long bloom season.
-*** Pictures
+*** To remove
+**** London rocket (Sisymbrium irio)
+Pull before the long slender pods mature.
+
+Source: [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
+
+**** Stinknet (Oncosiphon pilulifer)
+Flowering is a critical control window; bag plants and do not let them seed.
+
 [[file:images/stinknet_bloom.png]]
+
+Source: [[https://extension.arizona.edu/topics/stinknet][UA Cooperative Extension — Stinknet]]
+
+**** Buffelgrass (Cenchrus ciliaris)
+Inspect landscaped and disturbed areas; remove before seed dispersal where feasible.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+*** To sustain plant
+**** Parry's penstemon (Penstemon parryi)
+Major spring display.
+
 [[file:images/parrys_penstemon.webp]]
-*** Sources
-- [[https://extension.arizona.edu/publication/march-monthly-gardening-guide-pima-county][UA Cooperative Extension — March Monthly Gardening Guide for Pima County]]
-- [[https://extension.arizona.edu/topics/stinknet][UA Cooperative Extension — Stinknet]]
-- [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
-- [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizona Native Plant Society — Desert marigold]]
+
+Source: [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
+
+**** Desert marigold (Baileya multiradiata)
+Native, drought-tolerant wildflower with a long bloom season.
+
+Source: [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizona Native Plant Society — Desert marigold]]
 
 ** April
-*** Remove / monitor
-- Stinknet (*Oncosiphon pilulifer*) — remove before seed set; dried plants become a wildfire-fuel concern.
-- London rocket (*Sisymbrium irio*) — remove remaining flowering/fruiting plants before seed dispersal.
-- Buffelgrass (*Cenchrus ciliaris*) — remove seed-producing plants where practical.
-*** Encourage / plant
-- Desert marigold (*Baileya multiradiata*) — flowering season begins strongly in Tucson.
-- Fairy duster (*Calliandra eriophylla*) — spring flowering native shrub.
-*** Pictures
+*** To remove
+**** Stinknet (Oncosiphon pilulifer)
+Remove before seed set; dried plants become a wildfire-fuel concern.
+
 [[file:images/stinknet_habitat.png]]
+
+Source: [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
+
+**** London rocket (Sisymbrium irio)
+Remove remaining flowering or fruiting plants before seed dispersal.
+
+Source: [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
+
+**** Buffelgrass (Cenchrus ciliaris)
+Remove seed-producing plants where practical.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+*** To sustain plant
+**** Desert marigold (Baileya multiradiata)
+Flowering season begins strongly in Tucson.
+
+Source: [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizona Native Plant Society — Desert marigold]]
+
+**** Fairy duster (Calliandra eriophylla)
+Spring-flowering native shrub.
+
 [[file:images/fairy_duster.jpg]]
-*** Sources
-- [[https://extension.arizona.edu/publication/april-monthly-gardening-guide-pima-county][UA Cooperative Extension — April Monthly Gardening Guide for Pima County]]
-- [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
-- [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
-- [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizona Native Plant Society — Desert marigold]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
+
+Source: [[https://aznps.com/the-plant-list/?species=calliandra+eriophylla][Arizona Native Plant Society — Fairy duster]]
 
 ** May
-*** Remove / monitor
-- Puncturevine / goathead (*Tribulus terrestris*) — remove very young plants before burs form.
-- Buffelgrass (*Cenchrus ciliaris*) — inspect before seed dispersal; cured grass is highly flammable.
-- Horse purslane (*Trianthema portulacastrum*) — warm-season annual in disturbed/irrigated areas; remove young mats if unwanted.
-*** Encourage / plant
-- Desert willow (*Chilopsis linearis*) — native flowering tree; best in a landscape position with more available moisture.
-- Desert marigold (*Baileya multiradiata*) — native spring/summer wildflower.
-*** Pictures
+*** To remove
+**** Puncturevine / goathead (Tribulus terrestris)
+Remove very young plants before burs form.
+
 [[file:images/puncturevine.jpg]]
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Buffelgrass (Cenchrus ciliaris)
+Inspect before seed dispersal; cured grass is highly flammable.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Horse purslane (Trianthema portulacastrum)
+Warm-season annual in disturbed or irrigated areas; remove young mats if unwanted.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+*** To sustain plant
+**** Desert willow (Chilopsis linearis)
+Native flowering tree; best in a landscape position with more available moisture.
+
 [[file:images/desert_willow.jpg]]
-*** Sources
-- [[https://extension.arizona.edu/publication/may-monthly-gardening-guide-pima-county][UA Cooperative Extension — May Monthly Gardening Guide for Pima County]]
-- [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
-- [[https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72][UA Campus Arboretum — Desert willow]]
+
+Source: [[https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72][UA Campus Arboretum — Desert willow]]
+
+**** Desert marigold (Baileya multiradiata)
+Native spring/summer wildflower.
+
+Source: [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizona Native Plant Society — Desert marigold]]
 
 ** June
-*** Remove / monitor
-- Puncturevine (*Tribulus terrestris*) — remove before sharp seed burs mature.
-- Horse purslane (*Trianthema portulacastrum*) — remove young plants before they spread and seed.
-- Buffelgrass (*Cenchrus ciliaris*) — dried grass can become a major fire fuel; prioritize plants around structures and access routes.
-*** Encourage / plant
-- Desert willow (*Chilopsis linearis*) — summer flowering native tree; provide appropriate supplemental water during establishment.
-- Chuparosa (*Justicia californica*) — native hummingbird shrub for hot, well-drained sites.
-*** Pictures
+*** To remove
+**** Puncturevine (Tribulus terrestris)
+Remove before sharp seed burs mature.
+
 [[file:images/puncturevine.jpg]]
-[[file:images/desert_willow.jp
-g]]
-*** Sources
-- [[https://extension.arizona.edu/publication/june-monthly-gardening-guide-pima-county][UA Cooperative Extension — June Monthly Gardening Guide for Pima County]]
-- [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
-- [[https://aznps.com/the-plant-list/?species=justicia+californica][Arizona Native Plant Society — Chuparosa]]
-- [[https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72][UA Campus Arboretum — Desert willow]]
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Horse purslane (Trianthema portulacastrum)
+Remove young plants before they spread and seed.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Buffelgrass (Cenchrus ciliaris)
+Dried grass can become major fire fuel; prioritize plants around structures and access routes.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+*** To sustain plant
+**** Desert willow (Chilopsis linearis)
+Summer-flowering native tree; provide appropriate supplemental water during establishment.
+
+[[file:images/desert_willow.jpg]]
+
+Source: [[https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72][UA Campus Arboretum — Desert willow]]
+
+**** Chuparosa (Justicia californica)
+Native hummingbird shrub for hot, well-drained sites.
+
+Source: [[https://aznps.com/the-plant-list/?species=justicia+californica][Arizona Native Plant Society — Chuparosa]]
 
 ** July
-*** Remove / monitor
-- Palmer amaranth / carelessweed (*Amaranthus palmeri*) — summer annual; remove before mature seed production.
-- Puncturevine (*Tribulus terrestris*) — continue removing flowering and fruiting plants.
-- Horse purslane (*Trianthema portulacastrum*) — remove unwanted mats before seed production.
-*** Encourage / plant
-- Saguaro (*Carnegiea gigantea*) — iconic Sonoran native; do not overwater established plants.
-- Desert willow (*Chilopsis linearis*) — native summer-flowering tree.
-*** Pictures
+*** To remove
+**** Palmer amaranth / carelessweed (Amaranthus palmeri)
+Summer annual; remove before mature seed production.
+
 [[file:images/palmer_amaranth.webp]]
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Puncturevine (Tribulus terrestris)
+Continue removing flowering and fruiting plants.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Horse purslane (Trianthema portulacastrum)
+Remove unwanted mats before seed production.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+*** To sustain plant
+**** Saguaro (Carnegiea gigantea)
+Iconic Sonoran native; do not overwater established plants.
+
 [[file:images/saguaro.jpg]]
-*** Sources
-- [[https://extension.arizona.edu/publication/july-monthly-gardening-guide-pima-county][UA Cooperative Extension — July Monthly Gardening Guide for Pima County]]
-- [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds / Pigweed resources]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
-- [[https://www.inaturalist.org/observations/258181216][iNaturalist — saguaro observation in Saguaro National Park, Tucson]]
+
+Source: [[https://www.inaturalist.org/observations/258181216][iNaturalist — Saguaro observation in Saguaro National Park, Tucson]]
+
+**** Desert willow (Chilopsis linearis)
+Native summer-flowering tree.
+
+Source: [[https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72][UA Campus Arboretum — Desert willow]]
 
 ** August
-*** Remove / monitor
-- Palmer amaranth (*Amaranthus palmeri*) — remove before seed rain; mature plants can be very large.
-- Puncturevine (*Tribulus terrestris*) — collect burs and remove plants to prevent spread on shoes, tires, and animals.
-- Buffelgrass (*Cenchrus ciliaris*) — prioritize dry, cured plants near structures and pathways.
-*** Encourage / plant
-- Chuparosa (*Justicia californica*) — native low-desert shrub and hummingbird resource.
-- Fairy duster (*Calliandra eriophylla*) — native shrub that responds to summer rain.
-*** Pictures
+*** To remove
+**** Palmer amaranth (Amaranthus palmeri)
+Remove before seed rain; mature plants can be very large.
+
 [[file:images/palmer_amaranth.webp]]
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Puncturevine (Tribulus terrestris)
+Collect burs and remove plants to prevent spread on shoes, tires, and animals.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Buffelgrass (Cenchrus ciliaris)
+Prioritize dry, cured plants near structures and pathways.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+*** To sustain plant
+**** Chuparosa (Justicia californica)
+Native low-desert shrub and hummingbird resource.
+
+Source: [[https://aznps.com/the-plant-list/?species=justicia+californica][Arizona Native Plant Society — Chuparosa]]
+
+**** Fairy duster (Calliandra eriophylla)
+Native shrub that responds to summer rain.
+
 [[file:images/fairy_duster.jpg]]
-*** Sources
-- [[https://extension.arizona.edu/publication/august-monthly-gardening-guide-pima-county][UA Cooperative Extension — August Monthly Gardening Guide for Pima County]]
-- [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
-- [[https://aznps.com/the-plant-list/?species=justicia+californica][Arizona Native Plant Society — Chuparosa]]
+
+Source: [[https://aznps.com/the-plant-list/?species=calliandra+eriophylla][Arizona Native Plant Society — Fairy duster]]
 
 ** September
-*** Remove / monitor
-- Puncturevine (*Tribulus terrestris*) — remove remaining seed-bearing plants and collect burs.
-- Palmer amaranth (*Amaranthus palmeri*) — remove before seed release.
-- Buffelgrass (*Cenchrus ciliaris*) — remove or manage dry stands, especially in defensible-space zones.
-*** Encourage / plant
-- Fairy duster (*Calliandra eriophylla*) — native shrub with flowering after rainfall.
-- Desert willow (*Chilopsis linearis*) — native tree suitable for appropriate moist microhabitats.
-*** Pictures
+*** To remove
+**** Puncturevine (Tribulus terrestris)
+Remove remaining seed-bearing plants and collect burs.
+
 [[file:images/puncturevine.jpg]]
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Palmer amaranth (Amaranthus palmeri)
+Remove before seed release.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Buffelgrass (Cenchrus ciliaris)
+Remove or manage dry stands, especially in defensible-space zones.
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+*** To sustain plant
+**** Fairy duster (Calliandra eriophylla)
+Native shrub with flowering after rainfall.
+
 [[file:images/fairy_duster.jpg]]
-*** Sources
-- [[https://extension.arizona.edu/publication/september-monthly-gardening-guide-pima-county][UA Cooperative Extension — September Monthly Gardening Guide for Pima County]]
-- [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
-- [[https://aznps.com/the-plant-list/?species=calliandra+eriophylla][Arizona Native Plant Society — Fairy duster]]
-  ** October
-*** Remove / monitor
-- Puncturevine (*Tribulus terrestris*) — remove dried plants and burs before they are transported around the property.
-- Buffelgrass (*Cenchrus ciliaris*) — inspect dry stands and prioritize wildfire-risk areas.
-- Sweet clover (*Melilotus indica*) — first winter seedlings may appear after autumn moisture.
-*** Encourage / plant
-- Saguaro (*Carnegiea gigantea*) — native structural plant; fall is a good time to plan desert landscaping rather than add summer irrigation.
-- Fairy duster (*Calliandra eriophylla*) — native shrub for sunny, well-drained sites.
-*** Pictures
+
+Source: [[https://aznps.com/the-plant-list/?species=calliandra+eriophylla][Arizona Native Plant Society — Fairy duster]]
+
+**** Desert willow (Chilopsis linearis)
+Native tree suitable for appropriate moist microhabitats.
+
+Source: [[https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72][UA Campus Arboretum — Desert willow]]
+
+** October
+*** To remove
+**** Puncturevine (Tribulus terrestris)
+Remove dried plants and burs before they are transported around the property.
+
+[[file:images/puncturevine.jpg]]
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Buffelgrass (Cenchrus ciliaris)
+Inspect dry stands and prioritize wildfire-risk areas.
+
 [[file:images/buffelgrass.png]]
+
+Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+
+**** Sweet clover (Melilotus indica)
+First winter seedlings may appear after autumn moisture.
+
+Source: [[https://extension.arizona.edu/publication/october-monthly-gardening-guide-pima-county][UA Cooperative Extension — October Monthly Gardening Guide for Pima County]]
+
+*** To sustain plant
+**** Saguaro (Carnegiea gigantea)
+Native structural plant; fall is a good time to plan desert landscaping rather than add summer irrigation.
+
 [[file:images/saguaro.jpg]]
-*** Sources
-- [[https://extension.arizona.edu/publication/october-monthly-gardening-guide-pima-county][UA Cooperative Extension — October Monthly Gardening Guide for Pima County]]
-- [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
-- [[https://www.inaturalist.org/observations/258181216][iNaturalist — saguaro observation in Saguaro National Park, Tucson]]
+
+Source: [[https://www.inaturalist.org/observations/258181216][iNaturalist — Saguaro observation in Saguaro National Park, Tucson]]
+
+**** Fairy duster (Calliandra eriophylla)
+Native shrub for sunny, well-drained sites.
+
+Source: [[https://aznps.com/the-plant-list/?species=calliandra+eriophylla][Arizona Native Plant Society — Fairy duster]]
 
 ** November
-*** Remove / monitor
-- London rocket (*Sisymbrium irio*) — new winter rosettes emerge after autumn/winter rain; pull while small.
-- Sweet clover (*Melilotus indica*) — remove unwanted rosettes before flowering.
-- Stinknet (*Oncosiphon pilulifer*) — monitor disturbed soil after rain; early removal is much easier than removing established seed-producing plants.
-*** Encourage / plant
-- Parry's penstemon (*Penstemon parryi*) — sow/establish for spring display where appropriate.
-- Desert willow (*Chilopsis linearis*) — deciduous native tree; plant in suitable wash/rainwater-harvesting positions.
-*** Pictures
+*** To remove
+**** London rocket (Sisymbrium irio)
+New winter rosettes emerge after autumn/winter rain; pull while small.
+
 [[file:images/london_rocket.png]]
+
+Source: [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
+
+**** Sweet clover (Melilotus indica)
+Remove unwanted rosettes before flowering.
+
+Source: [[https://extension.arizona.edu/publication/november-monthly-gardening-guide-pima-county][UA Cooperative Extension — November Monthly Gardening Guide for Pima County]]
+
+**** Stinknet (Oncosiphon pilulifer)
+Monitor disturbed soil after rain; early removal is much easier than removing established seed-producing plants.
+
+Source: [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
+
+*** To sustain plant
+**** Parry's penstemon (Penstemon parryi)
+Sow or establish for spring display where appropriate.
+
 [[file:images/parrys_penstemon.webp]]
-*** Sources
-- [[https://extension.arizona.edu/publication/november-monthly-gardening-guide-pima-county][UA Cooperative Extension — November Monthly Gardening Guide for Pima County]]
-- [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
-- [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
+
+Source: [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
+
+**** Desert willow (Chilopsis linearis)
+Deciduous native tree; plant in suitable wash or rainwater-harvesting positions.
+
+Source: [[https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72][UA Campus Arboretum — Desert willow]]
 
 ** December
-*** Remove / monitor
-- London rocket (*Sisymbrium irio*) — winter annual; easiest to remove at the rosette stage.
-- Sweet clover (*Melilotus indica*) — remove young winter plants if unwanted.
-- Stinknet (*Oncosiphon pilulifer*) — winter emergence can begin after rainfall; identify carefully and bag pulled plants.
-*** Encourage / plant
-- Parry's penstemon (*Penstemon parryi*) — prepare for spring flowering.
-- Desert marigold (*Baileya multiradiata*) — native low-water wildflower; protect desirable volunteers.
-*** Pictures
+*** To remove
+**** London rocket (Sisymbrium irio)
+Winter annual; easiest to remove at the rosette stage.
+
 [[file:images/london_rocket.png]]
+
+Source: [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
+
+**** Sweet clover (Melilotus indica)
+Remove young winter plants if unwanted.
+
+Source: [[https://extension.arizona.edu/publication/december-monthly-gardening-guide-pima-county][UA Cooperative Extension — December Monthly Gardening Guide for Pima County]]
+
+**** Stinknet (Oncosiphon pilulifer)
+Winter emergence can begin after rainfall; identify carefully and bag pulled plants.
+
+Source: [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
+
+*** To sustain plant
+**** Parry's penstemon (Penstemon parryi)
+Prepare for spring flowering.
+
 [[file:images/parrys_penstemon.webp]]
-*** Sources
-- [[https://extension.arizona.edu/publication/december-monthly-gardening-guide-pima-county][UA Cooperative Extension — December Monthly Gardening Guide for Pima County]]
-- [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
-- [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
-- [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizona Native Plant Society — Desert marigold]]
+
+Source: [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
+
+**** Desert marigold (Baileya multiradiata)
+Native low-water wildflower; protect desirable volunteers.
+
+Source: [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizona Native Plant Society — Desert marigold]]
 
 * General references
-- [[https://extension.arizona.edu/topics/weeds][University of Arizona Cooperative Extension — Weeds]]
-- [[https://extension.arizona.edu/programs/pima-county-invasive-species-program][Pima County Invasive Species Program]]
-- [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
-- [[https://extension.arizona.edu/publication/stinknet-southern-arizona][University of Arizona Cooperative Extension — Stinknet in Southern Arizona]]
-- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
-- [[https://aznps.com/the-plant-list/][Arizona Native Plant Society — The Plant List]]
-- [[https://www.tucsonaz.gov/files/sharedassets/public/v/1/city-services/tucson-water/public-education-and-outreach/documents/cot_landscape_maintenance_manual_2021.pdf][City of Tucson — Landscape Maintenance Manual]]
-- [[https://tucsonaudubon.org/wp-content/uploads/2023/04/FNL-CONTROLLING-BACKYARD-WEEDS.pdf][Tucson Audubon — Guide to Controlling Backyard Weeds]]
+
+[[https://extension.arizona.edu/topics/weeds][University of Arizona Cooperative Extension — Weeds]]
+[[https://extension.arizona.edu/programs/pima-county-invasive-species-program][Pima County Invasive Species Program]]
+[[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
+[[https://extension.arizona.edu/publication/stinknet-southern-arizona][University of Arizona Cooperative Extension — Stinknet in Southern Arizona]]
+[[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
+[[https://aznps.com/the-plant-list/][Arizona Native Plant Society — The Plant List]]
+[[https://www.tucsonaz.gov/files/sharedassets/public/v/1/city-services/tucson-water/public-education-and-outreach/documents/cot_landscape_maintenance_manual_2021.pdf][City of Tucson — Landscape Maintenance Manual]]
+[[https://tucsonaudubon.org/wp-content/uploads/2023/04/FNL-CONTROLLING-BACKYARD-WEEDS.pdf][Tucson Audubon — Guide to Controlling Backyard Weeds]]
 
 * Image credits
-- =london_rocket.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
-- =buffelgrass.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to Arizona-Sonora Desert Museum / Beat Back Buffelgrass.
-- =horse_purslane.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
-- =sweet_clover.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
-- =stinknet_bloom.png= and =stinknet_habitat.png= — cropped from University of Arizona Cooperative Extension, *Stinknet: a Weed Advancing in Southern Arizona*, revised December 2023.
-- =puncturevine.jpg= — New Mexico State University, Selected Plants of Navajo Rangelands; direct image associated with the Puncturevine entry.
-- =palmer_amaranth.webp= — PictureThis species image; use as an identification reference rather than a license claim.
-- =parrys_penstemon.webp= — University of Arizona EcoRestore Portal, *Penstemon parryi*.
-- =desert_willow.jpg= — Landscape Arizona, Desert Willow page.
-- =fairy_duster.jpg= — Arizona Native Plant Society, Fairy Duster page.
-- =saguaro.jpg= — iNaturalist observation 258181216, Saguaro National Park, Tucson; attribution remains with the original photographer.
+
+=london_rocket.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
+=buffelgrass.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to Arizona-Sonora Desert Museum / Beat Back Buffelgrass.
+=horse_purslane.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
+=sweet_clover.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
+=stinknet_bloom.png= and =stinknet_habitat.png= — cropped from University of Arizona Cooperative Extension, Stinknet: a Weed Advancing in Southern Arizona, revised December 2023.
+=puncturevine.jpg= — New Mexico State University, Selected Plants of Navajo Rangelands; direct image associated with the Puncturevine entry.
+=palmer_amaranth.webp= — PictureThis species image; use as an identification reference rather than a license claim.
+=parrys_penstemon.webp= — University of Arizona EcoRestore Portal, Penstemon parryi.
+=desert_willow.jpg= — Landscape Arizona, Desert Willow page.
+=fairy_duster.jpg= — Arizona Native Plant Society, Fairy Duster page.
+=saguaro.jpg= — iNaturalist observation 258181216, Saguaro National Park, Tucson; attribution remains with the original photographer.
 
 * Identification notes
-- London rocket can produce thousands of seeds; Arizona Invasive Plants recommends manual removal while young, at the basal-rosette stage.
-- Stinknet is a rapidly spreading invasive annual in southern Arizona. University of Arizona guidance emphasizes early detection, repeated control, and preventing seed spread. Do not burn it.
-- Buffelgrass and other invasive grasses can become serious wildfire fuels. Prioritize removal around structures and in defensible-space zones.
-- Puncturevine is easiest to manage before its characteristic spiny burs mature.
-- Palmer amaranth is native to Arizona, but it can still be an unwanted garden weed; "remove" here means remove where it is unwanted, not eradicate the native species from the landscape.
-- Many native Sonoran plants can appear spontaneously in a garden. Identify them before pulling them.
+
+London rocket can produce thousands of seeds; Arizona Invasive Plants recommends manual removal while young, at the basal-rosette stage.
+Stinknet is a rapidly spreading invasive annual in southern Arizona. University of Arizona guidance emphasizes early detection, repeated control, and preventing seed spread. Do not burn it.
+Buffelgrass and other invasive grasses can become serious wildfire fuels. Prioritize removal around structures and in defensible-space zones.
+Puncturevine is easiest to manage before its characteristic spiny burs mature.
+Palmer amaranth is native to Arizona, but it can still be an unwanted garden weed; "remove" here means remove where it is unwanted, not eradicate the native species from the landscape.
+Many native Sonoran plants can appear spontaneously in a garden. Identify them before pulling them.
 
 * Disclaimer
 This is a practical garden calendar, not a regulatory invasive-species list. For regulated
