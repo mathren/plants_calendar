@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-08-23 Sun 19:47 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tucson Sonoran Desert Garden Calendar</title>
+<meta name="author" content="Mathieu Renzo w/ chatGPT" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       plant calendar, tucson">
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Plant Calendar</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./tucson.html">Tucson</a>
+      <!-- <a href="./projects.html">Projects</a> -->
+    </div>
+    <a  href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./index.html">Home</a>
+    <a href="./tucson.html">Tucson</a>
+    <!-- <a href="./projects.html">Projects</a> -->
+  </div>
+</div>
+
+<!-- scripts -->
+<!-- menu  -->
+<script>
+  function HamburgerMenuFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+
+<!-- toggle drawers -->
+<script>
+  function toggleDrawer(id) {
+      const drawer = document.getElementById(id);
+      drawer.style.display = drawer.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+<!-- toggle dark mode -->
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+<!-- end scripts-->
+</div>
+<div id="content" class="content">
+<nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#tucson-sonoran-desert-garden-calendar">Tucson Sonoran Desert Garden Calendar</a>
+<ul>
+<li><a href="#january">January</a></li>
+<li><a href="#february">February</a></li>
+<li><a href="#march">March</a></li>
+<li><a href="#april">April</a></li>
+<li><a href="#may">May</a></li>
+<li><a href="#june">June</a></li>
+<li><a href="#july">July</a></li>
+<li><a href="#august">August</a></li>
+<li><a href="#september">September</a></li>
+<li><a href="#october">October</a></li>
+<li><a href="#november">November</a></li>
+<li><a href="#december">December</a></li>
+</ul>
+</li>
+<li><a href="#identification-notes">Identification notes</a></li>
+<li><a href="#general-notes">General Notes</a>
+<ul>
+<li><a href="#references">References</a></li>
+<li><a href="#image-credits">Image credits</a></li>
+<li><a href="#disclaimer">Disclaimer</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<script>
+function jumpToNearestDate() {
+  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  let closest = null;
+  let closestDiff = Infinity;
+
+  for (const h of headers) {
+    const ts = h.querySelector("span.timestamp");
+    if (!ts) continue;
+
+    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+    if (!match) continue;
+
+    const parsed = new Date(match[1] + "T00:00:00");
+    const diff = Math.abs(parsed - today);
+
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closest = h;
+    }
+  }
+
+  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+</script>
+<div id="outline-container-tucson-sonoran-desert-garden-calendar" class="outline-2">
+<h2 id="tucson-sonoran-desert-garden-calendar"><a href="#tucson-sonoran-desert-garden-calendar">Tucson Sonoran Desert Garden Calendar</a></h2>
+<div class="outline-text-2" id="text-org-element-1">
+<div style="text-align: center;">
+<button onclick="jumpToNearestDate()" title="Jump to today">
+  <a href="javascript:void(0);" title="Jump to today">
+    <i class="fa-solid fa-calendar-day"> Jump to today </i> <i class="fa-solid fa-calendar-day"></i>
+  </a>
+</button>
+</div>
+</div>
+<div id="outline-container-january" class="outline-3">
+<h3 id="january"><a href="#january">January</a></h3>
+<div class="outline-text-3" id="text-january">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="london-rocket-sisymbrium-irio"></a><a href="#london-rocket-sisymbrium-irio">London rocket (Sisymbrium irio)</a><br>
+<div class="outline-text-5" id="text-org-element-2">
+<p>
+Winter annual. Pull young rosettes and remove before seed production.
+</p>
+
+
+<figure id="org-element-3">
+<img src="images/london_rocket.png" alt="london_rocket.png" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket">Arizona Invasive Plants — London rocket</a>
+</p>
+</div>
+</li>
+<li><a id="sweet-clover-melilotus-indica"></a><a href="#sweet-clover-melilotus-indica">Sweet clover (Melilotus indica)</a><br>
+<div class="outline-text-5" id="text-org-element-4">
+<p>
+Remove unwanted winter annuals while soil is moist and plants are small.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/publication/january-monthly-gardening-guide-pima-county">UA Cooperative Extension — January Monthly Gardening Guide for Pima County</a>
+</p>
+</div>
+</li>
+<li><a id="stinknet-oncosiphon-pilulifer"></a><a href="#stinknet-oncosiphon-pilulifer">Stinknet (Oncosiphon pilulifer)</a><br>
+<div class="outline-text-5" id="text-org-element-5">
+<p>
+Monitor newly emerging rosettes after winter rain; bag pulled plants.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/publication/stinknet-southern-arizona">UA Cooperative Extension — Stinknet in Southern Arizona</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="parry-s-penstemon-penstemon-parryi"></a><a href="#parry-s-penstemon-penstemon-parryi">Parry's penstemon (Penstemon parryi)</a><br>
+<div class="outline-text-5" id="text-org-element-6">
+<p>
+Native Sonoran Desert spring wildflower; excellent for hummingbirds.
+</p>
+
+
+<figure id="org-element-7">
+<img src="images/parrys_penstemon.webp" alt="parrys_penstemon.webp" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf">Pima County Master Gardeners — Native Plants of the Tucson Area</a>
+</p>
+</div>
+</li>
+<li><a id="desert-willow-chilopsis-linearis"></a><a href="#desert-willow-chilopsis-linearis">Desert willow (Chilopsis linearis)</a><br>
+<div class="outline-text-5" id="text-org-element-8">
+<p>
+Native tree for appropriate wash-like or moister landscape positions.
+</p>
+
+<p>
+Source: <a href="https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72">UA Campus Arboretum — Desert willow</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-february" class="outline-3">
+<h3 id="february"><a href="#february">February</a></h3>
+<div class="outline-text-3" id="text-february">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="london-rocket-sisymbrium-irio"></a><a href="#london-rocket-sisymbrium-irio">London rocket (Sisymbrium irio)</a><br>
+<div class="outline-text-5" id="text-org-element-9">
+<p>
+Often conspicuous and flowering now; pull before pods mature.
+</p>
+
+<p>
+Source: <a href="https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket">Arizona Invasive Plants — London rocket</a>
+</p>
+</div>
+</li>
+<li><a id="stinknet-oncosiphon-pilulifer"></a><a href="#stinknet-oncosiphon-pilulifer">Stinknet (Oncosiphon pilulifer)</a><br>
+<div class="outline-text-5" id="text-org-element-10">
+<p>
+Remove flowering plants before seed set and bag them.
+</p>
+
+
+<figure id="org-element-11">
+<img src="images/stinknet_bloom.png" alt="stinknet_bloom.png" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/publication/stinknet-southern-arizona">UA Cooperative Extension — Stinknet in Southern Arizona</a>
+</p>
+</div>
+</li>
+<li><a id="sweet-clover-melilotus-indica"></a><a href="#sweet-clover-melilotus-indica">Sweet clover (Melilotus indica)</a><br>
+<div class="outline-text-5" id="text-org-element-12">
+<p>
+Remove before flowering and seed production if unwanted.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/publication/february-monthly-gardening-guide-pima-county">UA Cooperative Extension — February Monthly Gardening Guide for Pima County</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="parry-s-penstemon-penstemon-parryi"></a><a href="#parry-s-penstemon-penstemon-parryi">Parry's penstemon (Penstemon parryi)</a><br>
+<div class="outline-text-5" id="text-org-element-13">
+<p>
+Spring bloom approaches; protect seedlings and avoid confusing them with mustard rosettes.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf">Pima County Master Gardeners — Native Plants of the Tucson Area</a>
+</p>
+</div>
+</li>
+<li><a id="fairy-duster-calliandra-eriophylla"></a><a href="#fairy-duster-calliandra-eriophylla">Fairy duster (Calliandra eriophylla)</a><br>
+<div class="outline-text-5" id="text-org-element-14">
+<p>
+Native shrub; a good time to establish container-grown plants before extreme heat.
+</p>
+
+
+<figure id="org-element-15">
+<img src="images/fairy_duster.jpg" alt="fairy_duster.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=calliandra+eriophylla">Arizona Native Plant Society — Fairy duster</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-march" class="outline-3">
+<h3 id="march"><a href="#march">March</a></h3>
+<div class="outline-text-3" id="text-march">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="london-rocket-sisymbrium-irio"></a><a href="#london-rocket-sisymbrium-irio">London rocket (Sisymbrium irio)</a><br>
+<div class="outline-text-5" id="text-org-element-16">
+<p>
+Pull before the long slender pods mature.
+</p>
+
+<p>
+Source: <a href="https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket">Arizona Invasive Plants — London rocket</a>
+</p>
+</div>
+</li>
+<li><a id="stinknet-oncosiphon-pilulifer"></a><a href="#stinknet-oncosiphon-pilulifer">Stinknet (Oncosiphon pilulifer)</a><br>
+<div class="outline-text-5" id="text-org-element-17">
+<p>
+Flowering is a critical control window; bag plants and do not let them seed.
+</p>
+
+
+<figure id="org-element-18">
+<img src="images/stinknet_bloom.png" alt="stinknet_bloom.png" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/stinknet">UA Cooperative Extension — Stinknet</a>
+</p>
+</div>
+</li>
+<li><a id="buffelgrass-cenchrus-ciliaris"></a><a href="#buffelgrass-cenchrus-ciliaris">Buffelgrass (Cenchrus ciliaris)</a><br>
+<div class="outline-text-5" id="text-org-element-19">
+<p>
+Inspect landscaped and disturbed areas; remove before seed dispersal where feasible.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="parry-s-penstemon-penstemon-parryi"></a><a href="#parry-s-penstemon-penstemon-parryi">Parry's penstemon (Penstemon parryi)</a><br>
+<div class="outline-text-5" id="text-org-element-20">
+<p>
+Major spring display.
+</p>
+
+
+<figure id="org-element-21">
+<img src="images/parrys_penstemon.webp" alt="parrys_penstemon.webp" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf">Pima County Master Gardeners — Native Plants of the Tucson Area</a>
+</p>
+</div>
+</li>
+<li><a id="desert-marigold-baileya-multiradiata"></a><a href="#desert-marigold-baileya-multiradiata">Desert marigold (Baileya multiradiata)</a><br>
+<div class="outline-text-5" id="text-org-element-22">
+<p>
+Native, drought-tolerant wildflower with a long bloom season.
+</p>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=baileya+multiradiata">Arizona Native Plant Society — Desert marigold</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-april" class="outline-3">
+<h3 id="april"><a href="#april">April</a></h3>
+<div class="outline-text-3" id="text-april">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="stinknet-oncosiphon-pilulifer"></a><a href="#stinknet-oncosiphon-pilulifer">Stinknet (Oncosiphon pilulifer)</a><br>
+<div class="outline-text-5" id="text-org-element-23">
+<p>
+Remove before seed set; dried plants become a wildfire-fuel concern.
+</p>
+
+
+<figure id="org-element-24">
+<img src="images/stinknet_habitat.png" alt="stinknet_habitat.png" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/publication/stinknet-southern-arizona">UA Cooperative Extension — Stinknet in Southern Arizona</a>
+</p>
+</div>
+</li>
+<li><a id="london-rocket-sisymbrium-irio"></a><a href="#london-rocket-sisymbrium-irio">London rocket (Sisymbrium irio)</a><br>
+<div class="outline-text-5" id="text-org-element-25">
+<p>
+Remove remaining flowering or fruiting plants before seed dispersal.
+</p>
+
+<p>
+Source: <a href="https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket">Arizona Invasive Plants — London rocket</a>
+</p>
+</div>
+</li>
+<li><a id="buffelgrass-cenchrus-ciliaris"></a><a href="#buffelgrass-cenchrus-ciliaris">Buffelgrass (Cenchrus ciliaris)</a><br>
+<div class="outline-text-5" id="text-org-element-26">
+<p>
+Remove seed-producing plants where practical.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="desert-marigold-baileya-multiradiata"></a><a href="#desert-marigold-baileya-multiradiata">Desert marigold (Baileya multiradiata)</a><br>
+<div class="outline-text-5" id="text-org-element-27">
+<p>
+Flowering season begins strongly in Tucson.
+</p>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=baileya+multiradiata">Arizona Native Plant Society — Desert marigold</a>
+</p>
+</div>
+</li>
+<li><a id="fairy-duster-calliandra-eriophylla"></a><a href="#fairy-duster-calliandra-eriophylla">Fairy duster (Calliandra eriophylla)</a><br>
+<div class="outline-text-5" id="text-org-element-28">
+<p>
+Spring-flowering native shrub.
+</p>
+
+
+<figure id="org-element-29">
+<img src="images/fairy_duster.jpg" alt="fairy_duster.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=calliandra+eriophylla">Arizona Native Plant Society — Fairy duster</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-may" class="outline-3">
+<h3 id="may"><a href="#may">May</a></h3>
+<div class="outline-text-3" id="text-may">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="puncturevine-goathead-tribulus-terrestris"></a><a href="#puncturevine-goathead-tribulus-terrestris">Puncturevine / goathead (Tribulus terrestris)</a><br>
+<div class="outline-text-5" id="text-org-element-30">
+<p>
+Remove very young plants before burs form.
+</p>
+
+
+<figure id="org-element-31">
+<img src="images/puncturevine.jpg" alt="puncturevine.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="buffelgrass-cenchrus-ciliaris"></a><a href="#buffelgrass-cenchrus-ciliaris">Buffelgrass (Cenchrus ciliaris)</a><br>
+<div class="outline-text-5" id="text-org-element-32">
+<p>
+Inspect before seed dispersal; cured grass is highly flammable.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="horse-purslane-trianthema-portulacastrum"></a><a href="#horse-purslane-trianthema-portulacastrum">Horse purslane (Trianthema portulacastrum)</a><br>
+<div class="outline-text-5" id="text-org-element-33">
+<p>
+Warm-season annual in disturbed or irrigated areas; remove young mats if unwanted.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="desert-willow-chilopsis-linearis"></a><a href="#desert-willow-chilopsis-linearis">Desert willow (Chilopsis linearis)</a><br>
+<div class="outline-text-5" id="text-org-element-34">
+<p>
+Native flowering tree; best in a landscape position with more available moisture.
+</p>
+
+
+<figure id="org-element-35">
+<img src="images/desert_willow.jpg" alt="desert_willow.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72">UA Campus Arboretum — Desert willow</a>
+</p>
+</div>
+</li>
+<li><a id="desert-marigold-baileya-multiradiata"></a><a href="#desert-marigold-baileya-multiradiata">Desert marigold (Baileya multiradiata)</a><br>
+<div class="outline-text-5" id="text-org-element-36">
+<p>
+Native spring/summer wildflower.
+</p>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=baileya+multiradiata">Arizona Native Plant Society — Desert marigold</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-june" class="outline-3">
+<h3 id="june"><a href="#june">June</a></h3>
+<div class="outline-text-3" id="text-june">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="puncturevine-tribulus-terrestris"></a><a href="#puncturevine-tribulus-terrestris">Puncturevine (Tribulus terrestris)</a><br>
+<div class="outline-text-5" id="text-org-element-37">
+<p>
+Remove before sharp seed burs mature.
+</p>
+
+
+<figure id="org-element-38">
+<img src="images/puncturevine.jpg" alt="puncturevine.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="horse-purslane-trianthema-portulacastrum"></a><a href="#horse-purslane-trianthema-portulacastrum">Horse purslane (Trianthema portulacastrum)</a><br>
+<div class="outline-text-5" id="text-org-element-39">
+<p>
+Remove young plants before they spread and seed.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="buffelgrass-cenchrus-ciliaris"></a><a href="#buffelgrass-cenchrus-ciliaris">Buffelgrass (Cenchrus ciliaris)</a><br>
+<div class="outline-text-5" id="text-org-element-40">
+<p>
+Dried grass can become major fire fuel; prioritize plants around structures and access routes.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="desert-willow-chilopsis-linearis"></a><a href="#desert-willow-chilopsis-linearis">Desert willow (Chilopsis linearis)</a><br>
+<div class="outline-text-5" id="text-org-element-41">
+<p>
+Summer-flowering native tree; provide appropriate supplemental water during establishment.
+</p>
+
+
+<figure id="org-element-42">
+<img src="images/desert_willow.jpg" alt="desert_willow.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72">UA Campus Arboretum — Desert willow</a>
+</p>
+</div>
+</li>
+<li><a id="chuparosa-justicia-californica"></a><a href="#chuparosa-justicia-californica">Chuparosa (Justicia californica)</a><br>
+<div class="outline-text-5" id="text-org-element-43">
+<p>
+Native hummingbird shrub for hot, well-drained sites.
+</p>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=justicia+californica">Arizona Native Plant Society — Chuparosa</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-july" class="outline-3">
+<h3 id="july"><a href="#july">July</a></h3>
+<div class="outline-text-3" id="text-july">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="palmer-amaranth-carelessweed-amaranthus-palmeri"></a><a href="#palmer-amaranth-carelessweed-amaranthus-palmeri">Palmer amaranth / carelessweed (Amaranthus palmeri)</a><br>
+<div class="outline-text-5" id="text-org-element-44">
+<p>
+Summer annual; remove before mature seed production.
+</p>
+
+
+<figure id="org-element-45">
+<img src="images/palmer_amaranth.webp" alt="palmer_amaranth.webp" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="puncturevine-tribulus-terrestris"></a><a href="#puncturevine-tribulus-terrestris">Puncturevine (Tribulus terrestris)</a><br>
+<div class="outline-text-5" id="text-org-element-46">
+<p>
+Continue removing flowering and fruiting plants.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="horse-purslane-trianthema-portulacastrum"></a><a href="#horse-purslane-trianthema-portulacastrum">Horse purslane (Trianthema portulacastrum)</a><br>
+<div class="outline-text-5" id="text-org-element-47">
+<p>
+Remove unwanted mats before seed production.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="saguaro-carnegiea-gigantea"></a><a href="#saguaro-carnegiea-gigantea">Saguaro (Carnegiea gigantea)</a><br>
+<div class="outline-text-5" id="text-org-element-48">
+<p>
+Iconic Sonoran native; do not overwater established plants.
+</p>
+
+
+<figure id="org-element-49">
+<img src="images/saguaro.jpg" alt="saguaro.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://www.inaturalist.org/observations/258181216">iNaturalist — Saguaro observation in Saguaro National Park, Tucson</a>
+</p>
+</div>
+</li>
+<li><a id="desert-willow-chilopsis-linearis"></a><a href="#desert-willow-chilopsis-linearis">Desert willow (Chilopsis linearis)</a><br>
+<div class="outline-text-5" id="text-org-element-50">
+<p>
+Native summer-flowering tree.
+</p>
+
+<p>
+Source: <a href="https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72">UA Campus Arboretum — Desert willow</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-august" class="outline-3">
+<h3 id="august"><a href="#august">August</a></h3>
+<div class="outline-text-3" id="text-august">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="palmer-amaranth-amaranthus-palmeri"></a><a href="#palmer-amaranth-amaranthus-palmeri">Palmer amaranth (Amaranthus palmeri)</a><br>
+<div class="outline-text-5" id="text-org-element-51">
+<p>
+Remove before seed rain; mature plants can be very large.
+</p>
+
+
+<figure id="org-element-52">
+<img src="images/palmer_amaranth.webp" alt="palmer_amaranth.webp" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="puncturevine-tribulus-terrestris"></a><a href="#puncturevine-tribulus-terrestris">Puncturevine (Tribulus terrestris)</a><br>
+<div class="outline-text-5" id="text-org-element-53">
+<p>
+Collect burs and remove plants to prevent spread on shoes, tires, and animals.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="buffelgrass-cenchrus-ciliaris"></a><a href="#buffelgrass-cenchrus-ciliaris">Buffelgrass (Cenchrus ciliaris)</a><br>
+<div class="outline-text-5" id="text-org-element-54">
+<p>
+Prioritize dry, cured plants near structures and pathways.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="chuparosa-justicia-californica"></a><a href="#chuparosa-justicia-californica">Chuparosa (Justicia californica)</a><br>
+<div class="outline-text-5" id="text-org-element-55">
+<p>
+Native low-desert shrub and hummingbird resource.
+</p>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=justicia+californica">Arizona Native Plant Society — Chuparosa</a>
+</p>
+</div>
+</li>
+<li><a id="fairy-duster-calliandra-eriophylla"></a><a href="#fairy-duster-calliandra-eriophylla">Fairy duster (Calliandra eriophylla)</a><br>
+<div class="outline-text-5" id="text-org-element-56">
+<p>
+Native shrub that responds to summer rain.
+</p>
+
+
+<figure id="org-element-57">
+<img src="images/fairy_duster.jpg" alt="fairy_duster.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=calliandra+eriophylla">Arizona Native Plant Society — Fairy duster</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-september" class="outline-3">
+<h3 id="september"><a href="#september">September</a></h3>
+<div class="outline-text-3" id="text-september">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="puncturevine-tribulus-terrestris"></a><a href="#puncturevine-tribulus-terrestris">Puncturevine (Tribulus terrestris)</a><br>
+<div class="outline-text-5" id="text-org-element-58">
+<p>
+Remove remaining seed-bearing plants and collect burs.
+</p>
+
+
+<figure id="org-element-59">
+<img src="images/puncturevine.jpg" alt="puncturevine.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="palmer-amaranth-amaranthus-palmeri"></a><a href="#palmer-amaranth-amaranthus-palmeri">Palmer amaranth (Amaranthus palmeri)</a><br>
+<div class="outline-text-5" id="text-org-element-60">
+<p>
+Remove before seed release.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="buffelgrass-cenchrus-ciliaris"></a><a href="#buffelgrass-cenchrus-ciliaris">Buffelgrass (Cenchrus ciliaris)</a><br>
+<div class="outline-text-5" id="text-org-element-61">
+<p>
+Remove or manage dry stands, especially in defensible-space zones.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="fairy-duster-calliandra-eriophylla"></a><a href="#fairy-duster-calliandra-eriophylla">Fairy duster (Calliandra eriophylla)</a><br>
+<div class="outline-text-5" id="text-org-element-62">
+<p>
+Native shrub with flowering after rainfall.
+</p>
+
+
+<figure id="org-element-63">
+<img src="images/fairy_duster.jpg" alt="fairy_duster.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=calliandra+eriophylla">Arizona Native Plant Society — Fairy duster</a>
+</p>
+</div>
+</li>
+<li><a id="desert-willow-chilopsis-linearis"></a><a href="#desert-willow-chilopsis-linearis">Desert willow (Chilopsis linearis)</a><br>
+<div class="outline-text-5" id="text-org-element-64">
+<p>
+Native tree suitable for appropriate moist microhabitats.
+</p>
+
+<p>
+Source: <a href="https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72">UA Campus Arboretum — Desert willow</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-october" class="outline-3">
+<h3 id="october"><a href="#october">October</a></h3>
+<div class="outline-text-3" id="text-october">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="puncturevine-tribulus-terrestris"></a><a href="#puncturevine-tribulus-terrestris">Puncturevine (Tribulus terrestris)</a><br>
+<div class="outline-text-5" id="text-org-element-65">
+<p>
+Remove dried plants and burs before they are transported around the property.
+</p>
+
+
+<figure id="org-element-66">
+<img src="images/puncturevine.jpg" alt="puncturevine.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="buffelgrass-cenchrus-ciliaris"></a><a href="#buffelgrass-cenchrus-ciliaris">Buffelgrass (Cenchrus ciliaris)</a><br>
+<div class="outline-text-5" id="text-org-element-67">
+<p>
+Inspect dry stands and prioritize wildfire-risk areas.
+</p>
+
+
+<figure id="org-element-68">
+<img src="images/buffelgrass.png" alt="buffelgrass.png" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/topics/weeds">UA Cooperative Extension — Weeds</a>
+</p>
+</div>
+</li>
+<li><a id="sweet-clover-melilotus-indica"></a><a href="#sweet-clover-melilotus-indica">Sweet clover (Melilotus indica)</a><br>
+<div class="outline-text-5" id="text-org-element-69">
+<p>
+First winter seedlings may appear after autumn moisture.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/publication/october-monthly-gardening-guide-pima-county">UA Cooperative Extension — October Monthly Gardening Guide for Pima County</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="saguaro-carnegiea-gigantea"></a><a href="#saguaro-carnegiea-gigantea">Saguaro (Carnegiea gigantea)</a><br>
+<div class="outline-text-5" id="text-org-element-70">
+<p>
+Native structural plant; fall is a good time to plan desert landscaping rather than add summer irrigation.
+</p>
+
+
+<figure id="org-element-71">
+<img src="images/saguaro.jpg" alt="saguaro.jpg" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://www.inaturalist.org/observations/258181216">iNaturalist — Saguaro observation in Saguaro National Park, Tucson</a>
+</p>
+</div>
+</li>
+<li><a id="fairy-duster-calliandra-eriophylla"></a><a href="#fairy-duster-calliandra-eriophylla">Fairy duster (Calliandra eriophylla)</a><br>
+<div class="outline-text-5" id="text-org-element-72">
+<p>
+Native shrub for sunny, well-drained sites.
+</p>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=calliandra+eriophylla">Arizona Native Plant Society — Fairy duster</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-november" class="outline-3">
+<h3 id="november"><a href="#november">November</a></h3>
+<div class="outline-text-3" id="text-november">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="london-rocket-sisymbrium-irio"></a><a href="#london-rocket-sisymbrium-irio">London rocket (Sisymbrium irio)</a><br>
+<div class="outline-text-5" id="text-org-element-73">
+<p>
+New winter rosettes emerge after autumn/winter rain; pull while small.
+</p>
+
+
+<figure id="org-element-74">
+<img src="images/london_rocket.png" alt="london_rocket.png" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket">Arizona Invasive Plants — London rocket</a>
+</p>
+</div>
+</li>
+<li><a id="sweet-clover-melilotus-indica"></a><a href="#sweet-clover-melilotus-indica">Sweet clover (Melilotus indica)</a><br>
+<div class="outline-text-5" id="text-org-element-75">
+<p>
+Remove unwanted rosettes before flowering.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/publication/november-monthly-gardening-guide-pima-county">UA Cooperative Extension — November Monthly Gardening Guide for Pima County</a>
+</p>
+</div>
+</li>
+<li><a id="stinknet-oncosiphon-pilulifer"></a><a href="#stinknet-oncosiphon-pilulifer">Stinknet (Oncosiphon pilulifer)</a><br>
+<div class="outline-text-5" id="text-org-element-76">
+<p>
+Monitor disturbed soil after rain; early removal is much easier than removing established seed-producing plants.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/publication/stinknet-southern-arizona">UA Cooperative Extension — Stinknet in Southern Arizona</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="parry-s-penstemon-penstemon-parryi"></a><a href="#parry-s-penstemon-penstemon-parryi">Parry's penstemon (Penstemon parryi)</a><br>
+<div class="outline-text-5" id="text-org-element-77">
+<p>
+Sow or establish for spring display where appropriate.
+</p>
+
+
+<figure id="org-element-78">
+<img src="images/parrys_penstemon.webp" alt="parrys_penstemon.webp" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf">Pima County Master Gardeners — Native Plants of the Tucson Area</a>
+</p>
+</div>
+</li>
+<li><a id="desert-willow-chilopsis-linearis"></a><a href="#desert-willow-chilopsis-linearis">Desert willow (Chilopsis linearis)</a><br>
+<div class="outline-text-5" id="text-org-element-79">
+<p>
+Deciduous native tree; plant in suitable wash or rainwater-harvesting positions.
+</p>
+
+<p>
+Source: <a href="https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=72">UA Campus Arboretum — Desert willow</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-december" class="outline-3">
+<h3 id="december"><a href="#december">December</a></h3>
+<div class="outline-text-3" id="text-december">
+</div>
+<div id="outline-container-to-remove" class="outline-4">
+<h4 id="to-remove"><a href="#to-remove">To remove</a></h4>
+<div class="outline-text-4" id="text-to-remove">
+</div>
+<ul class="org-ul">
+<li><a id="london-rocket-sisymbrium-irio"></a><a href="#london-rocket-sisymbrium-irio">London rocket (Sisymbrium irio)</a><br>
+<div class="outline-text-5" id="text-org-element-80">
+<p>
+Winter annual; easiest to remove at the rosette stage.
+</p>
+
+
+<figure id="org-element-81">
+<img src="images/london_rocket.png" alt="london_rocket.png" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket">Arizona Invasive Plants — London rocket</a>
+</p>
+</div>
+</li>
+<li><a id="sweet-clover-melilotus-indica"></a><a href="#sweet-clover-melilotus-indica">Sweet clover (Melilotus indica)</a><br>
+<div class="outline-text-5" id="text-org-element-82">
+<p>
+Remove young winter plants if unwanted.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/publication/december-monthly-gardening-guide-pima-county">UA Cooperative Extension — December Monthly Gardening Guide for Pima County</a>
+</p>
+</div>
+</li>
+<li><a id="stinknet-oncosiphon-pilulifer"></a><a href="#stinknet-oncosiphon-pilulifer">Stinknet (Oncosiphon pilulifer)</a><br>
+<div class="outline-text-5" id="text-org-element-83">
+<p>
+Winter emergence can begin after rainfall; identify carefully and bag pulled plants.
+</p>
+
+<p>
+Source: <a href="https://extension.arizona.edu/publication/stinknet-southern-arizona">UA Cooperative Extension — Stinknet in Southern Arizona</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-to-sustain-plant" class="outline-4">
+<h4 id="to-sustain-plant"><a href="#to-sustain-plant">To sustain plant</a></h4>
+<div class="outline-text-4" id="text-to-sustain-plant">
+</div>
+<ul class="org-ul">
+<li><a id="parry-s-penstemon-penstemon-parryi"></a><a href="#parry-s-penstemon-penstemon-parryi">Parry's penstemon (Penstemon parryi)</a><br>
+<div class="outline-text-5" id="text-org-element-84">
+<p>
+Prepare for spring flowering.
+</p>
+
+
+<figure id="org-element-85">
+<img src="images/parrys_penstemon.webp" alt="parrys_penstemon.webp" width="100%">
+
+</figure>
+
+<p>
+Source: <a href="https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf">Pima County Master Gardeners — Native Plants of the Tucson Area</a>
+</p>
+</div>
+</li>
+<li><a id="desert-marigold-baileya-multiradiata"></a><a href="#desert-marigold-baileya-multiradiata">Desert marigold (Baileya multiradiata)</a><br>
+<div class="outline-text-5" id="text-org-element-86">
+<p>
+Native low-water wildflower; protect desirable volunteers.
+</p>
+
+<p>
+Source: <a href="https://aznps.com/the-plant-list/?species=baileya+multiradiata">Arizona Native Plant Society — Desert marigold</a>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-identification-notes" class="outline-2">
+<h2 id="identification-notes"><a href="#identification-notes">Identification notes</a></h2>
+<div class="outline-text-2" id="text-org-element-87">
+<p>
+London rocket can produce thousands of seeds; Arizona Invasive Plants recommends manual removal while young, at the basal-rosette stage.
+Stinknet is a rapidly spreading invasive annual in southern Arizona. University of Arizona guidance emphasizes early detection, repeated control, and preventing seed spread. Do not burn it.
+Buffelgrass and other invasive grasses can become serious wildfire fuels. Prioritize removal around structures and in defensible-space zones.
+Puncturevine is easiest to manage before its characteristic spiny burs mature.
+Palmer amaranth is native to Arizona, but it can still be an unwanted garden weed; "remove" here means remove where it is unwanted, not eradicate the native species from the landscape.
+Many native Sonoran plants can appear spontaneously in a garden. Identify them before pulling them.
+</p>
+</div>
+</div>
+<div id="outline-container-general-notes" class="outline-2">
+<h2 id="general-notes"><a href="#general-notes">General Notes</a></h2>
+<div class="outline-text-2" id="text-general-notes">
+</div>
+<div id="outline-container-references" class="outline-3">
+<h3 id="references"><a href="#references">References</a></h3>
+<div class="outline-text-3" id="text-org-element-88">
+<p>
+<a href="https://extension.arizona.edu/topics/weeds">University of Arizona Cooperative Extension — Weeds</a>
+<a href="https://extension.arizona.edu/programs/pima-county-invasive-species-program">Pima County Invasive Species Program</a>
+<a href="https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket">Arizona Invasive Plants — London rocket</a>
+<a href="https://extension.arizona.edu/publication/stinknet-southern-arizona">University of Arizona Cooperative Extension — Stinknet in Southern Arizona</a>
+<a href="https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf">Pima County Master Gardeners — Native Plants of the Tucson Area</a>
+<a href="https://aznps.com/the-plant-list/">Arizona Native Plant Society — The Plant List</a>
+<a href="https://www.tucsonaz.gov/files/sharedassets/public/v/1/city-services/tucson-water/public-education-and-outreach/documents/cot_landscape_maintenance_manual_2021.pdf">City of Tucson — Landscape Maintenance Manual</a>
+<a href="https://tucsonaudubon.org/wp-content/uploads/2023/04/FNL-CONTROLLING-BACKYARD-WEEDS.pdf">Tucson Audubon — Guide to Controlling Backyard Weeds</a>
+</p>
+</div>
+</div>
+<div id="outline-container-image-credits" class="outline-3">
+<h3 id="image-credits"><a href="#image-credits">Image credits</a></h3>
+<div class="outline-text-3" id="text-org-element-89">
+<p>
+<code>london_rocket.png</code> — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
+<code>buffelgrass.png</code> — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to Arizona-Sonora Desert Museum / Beat Back Buffelgrass.
+<code>horse_purslane.png</code> — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
+<code>sweet_clover.png</code> — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
+<code>stinknet_bloom.png</code> and <code>stinknet_habitat.png</code> — cropped from University of Arizona Cooperative Extension, Stinknet: a Weed Advancing in Southern Arizona, revised December 2023.
+<code>puncturevine.jpg</code> — New Mexico State University, Selected Plants of Navajo Rangelands; direct image associated with the Puncturevine entry.
+<code>palmer_amaranth.webp</code> — PictureThis species image; use as an identification reference rather than a license claim.
+<code>parrys_penstemon.webp</code> — University of Arizona EcoRestore Portal, Penstemon parryi.
+<code>desert_willow.jpg</code> — Landscape Arizona, Desert Willow page.
+<code>fairy_duster.jpg</code> — Arizona Native Plant Society, Fairy Duster page.
+<code>saguaro.jpg</code> — iNaturalist observation 258181216, Saguaro National Park, Tucson; attribution remains with the original photographer.
+</p>
+</div>
+</div>
+<div id="outline-container-disclaimer" class="outline-3">
+<h3 id="disclaimer"><a href="#disclaimer">Disclaimer</a></h3>
+<div class="outline-text-3" id="text-org-element-90">
+<p>
+This is a practical garden calendar, not a regulatory invasive-species list. For regulated
+or potentially hazardous plants, follow current Pima County, Arizona, and University of
+Arizona guidance.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/plant_calendar"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <br>
+  Last updated on 23 August 2026 <br>
+  Made with Emacs 30.1 - Org mode 9.7.11
+  <br>
+</div>
+</div>
+</body>
+</html>
