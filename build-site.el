@@ -215,9 +215,8 @@ All other random IDs (figures, latex blocks, etc.) get a counter-based ID."
 	     :html-doctype "html5"
 	     :language "en"
 	     :html-html5-fancy t
-	     :email "mrenzo@arizona.edu"
 	     :meta-type "website"
-	     :description: "Website for ASTR170B1 -- 002"
+	     :description: "Plant Calendar"
 	     :with-title nil
 	     :with-latex t
 	     :with-sub-superscript t
