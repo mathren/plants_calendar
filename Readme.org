@@ -1,0 +1,21 @@
+#+Title: Plants calendar
+#+author: Mathieu Renzo
+
+
+[[https://azhouse.ddns.net:9999/calendar_tucson.html][https://img.shields.io/website-up-down-green-red/http/shields.io.svg]]
+
+A month-by-month field calendar for a Tucson garden in the Sonoran Desert.
+
+
+The calendar emphasizes early identification and removal of common invasive or
+unwanted weeds, while highlighting native Sonoran Desert plants to retain,
+encourage, or plant.
+
+The timing is approximate: rainfall, irrigation, elevation, and microclimate can
+shift emergence and flowering by several weeks. Do not remove an unfamiliar
+volunteer merely because it looks weedy; identify it first.
+
+* Disclaimer
+This is a practical garden calendar, not a regulatory invasive-species list. For regulated
+or potentially hazardous plants, follow current Pima County, Arizona, and University of
+Arizona guidance.

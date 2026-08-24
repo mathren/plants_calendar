@@ -46,15 +46,6 @@ function jumpToNearestDate() {
 </div>
 #+END_EXPORT
 
-A month-by-month field calendar for a Tucson garden in the Sonoran Desert.
-The calendar emphasizes early identification and removal of common invasive or
-unwanted weeds, while highlighting native Sonoran Desert plants to retain,
-encourage, or plant.
-
-The timing is approximate: rainfall, irrigation, elevation, and microclimate can
-shift emergence and flowering by several weeks. Do not remove an unfamiliar
-volunteer merely because it looks weedy; identify it first.
-
 ** January
 *** To remove
 **** London rocket (Sisymbrium irio)
@@ -441,7 +432,19 @@ Native low-water wildflower; protect desirable volunteers.
 
 Source: [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizona Native Plant Society — Desert marigold]]
 
-* General references
+
+* Identification notes
+
+London rocket can produce thousands of seeds; Arizona Invasive Plants recommends manual removal while young, at the basal-rosette stage.
+Stinknet is a rapidly spreading invasive annual in southern Arizona. University of Arizona guidance emphasizes early detection, repeated control, and preventing seed spread. Do not burn it.
+Buffelgrass and other invasive grasses can become serious wildfire fuels. Prioritize removal around structures and in defensible-space zones.
+Puncturevine is easiest to manage before its characteristic spiny burs mature.
+Palmer amaranth is native to Arizona, but it can still be an unwanted garden weed; "remove" here means remove where it is unwanted, not eradicate the native species from the landscape.
+Many native Sonoran plants can appear spontaneously in a garden. Identify them before pulling them.
+
+* General Notes
+
+** References
 
 [[https://extension.arizona.edu/topics/weeds][University of Arizona Cooperative Extension — Weeds]]
 [[https://extension.arizona.edu/programs/pima-county-invasive-species-program][Pima County Invasive Species Program]]
@@ -452,7 +455,7 @@ Source: [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizon
 [[https://www.tucsonaz.gov/files/sharedassets/public/v/1/city-services/tucson-water/public-education-and-outreach/documents/cot_landscape_maintenance_manual_2021.pdf][City of Tucson — Landscape Maintenance Manual]]
 [[https://tucsonaudubon.org/wp-content/uploads/2023/04/FNL-CONTROLLING-BACKYARD-WEEDS.pdf][Tucson Audubon — Guide to Controlling Backyard Weeds]]
 
-* Image credits
+** Image credits
 
 =london_rocket.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
 =buffelgrass.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to Arizona-Sonora Desert Museum / Beat Back Buffelgrass.
@@ -466,16 +469,7 @@ Source: [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizon
 =fairy_duster.jpg= — Arizona Native Plant Society, Fairy Duster page.
 =saguaro.jpg= — iNaturalist observation 258181216, Saguaro National Park, Tucson; attribution remains with the original photographer.
 
-* Identification notes
-
-London rocket can produce thousands of seeds; Arizona Invasive Plants recommends manual removal while young, at the basal-rosette stage.
-Stinknet is a rapidly spreading invasive annual in southern Arizona. University of Arizona guidance emphasizes early detection, repeated control, and preventing seed spread. Do not burn it.
-Buffelgrass and other invasive grasses can become serious wildfire fuels. Prioritize removal around structures and in defensible-space zones.
-Puncturevine is easiest to manage before its characteristic spiny burs mature.
-Palmer amaranth is native to Arizona, but it can still be an unwanted garden weed; "remove" here means remove where it is unwanted, not eradicate the native species from the landscape.
-Many native Sonoran plants can appear spontaneously in a garden. Identify them before pulling them.
-
-* Disclaimer
+** Disclaimer
 This is a practical garden calendar, not a regulatory invasive-species list. For regulated
 or potentially hazardous plants, follow current Pima County, Arizona, and University of
 Arizona guidance.
