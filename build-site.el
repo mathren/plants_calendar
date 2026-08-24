@@ -126,7 +126,7 @@ INFO is the export plist."
 ;; set default image width 100% in html
 (defun mr/org-html-default-image-width (orig-fun source attributes info)
   (unless (plist-get attributes :width)
-    (setq attributes (plist-put attributes :width "100%")))
+    (setq attributes (plist-put attributes :width "50%")))
   (funcall orig-fun source attributes info))
 
 (advice-add 'org-html--format-image :around #'mr/org-html-default-image-width)
