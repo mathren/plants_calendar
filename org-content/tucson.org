@@ -472,20 +472,6 @@ Source: [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizon
 [[https://www.tucsonaz.gov/files/sharedassets/public/v/1/city-services/tucson-water/public-education-and-outreach/documents/cot_landscape_maintenance_manual_2021.pdf][City of Tucson — Landscape Maintenance Manual]]
 [[https://tucsonaudubon.org/wp-content/uploads/2023/04/FNL-CONTROLLING-BACKYARD-WEEDS.pdf][Tucson Audubon — Guide to Controlling Backyard Weeds]]
 
-** Image credits
-
-=london_rocket.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
-=buffelgrass.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to Arizona-Sonora Desert Museum / Beat Back Buffelgrass.
-=horse_purslane.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
-=sweet_clover.png= — cropped from City of Tucson, Landscape Maintenance Manual, p. 15; photo credited in the document to University of Arizona Cooperative Extension Photo Library.
-=stinknet_bloom.png= and =stinknet_habitat.png= — cropped from University of Arizona Cooperative Extension, Stinknet: a Weed Advancing in Southern Arizona, revised December 2023.
-=puncturevine.jpg= — New Mexico State University, Selected Plants of Navajo Rangelands; direct image associated with the Puncturevine entry.
-=palmer_amaranth.webp= — PictureThis species image; use as an identification reference rather than a license claim.
-=parrys_penstemon.webp= — University of Arizona EcoRestore Portal, Penstemon parryi.
-=desert_willow.jpg= — Landscape Arizona, Desert Willow page.
-=fairy_duster.jpg= — Arizona Native Plant Society, Fairy Duster page.
-=saguaro.jpg= — iNaturalist observation 258181216, Saguaro National Park, Tucson; attribution remains with the original photographer.
-
 ** Disclaimer
 This is a practical garden calendar, not a regulatory invasive-species list. For regulated
 or potentially hazardous plants, follow current Pima County, Arizona, and University of

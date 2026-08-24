@@ -210,7 +210,7 @@ All other random IDs (figures, latex blocks, etc.) get a counter-based ID."
              :base-directory "./org-content"
 	     :publishing-directory "./html-content"
 	     :recursive t
-	     :exclude "LICENSE\\|\\.gitignore"
+	     :exclude "LICENSE\\|\\.gitignore\\|\\README.org"
              :publishing-function 'org-html-publish-to-html
 	     :html-doctype "html5"
 	     :language "en"
