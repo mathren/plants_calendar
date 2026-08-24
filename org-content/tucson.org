@@ -1,6 +1,6 @@
 #+TITLE: Tucson Sonoran Desert Garden Calendar
 #+AUTHOR: Mathieu Renzo w/ chatGPT
-#+OPTIONS: title:nil toc:2
+#+OPTIONS: title:nil
 #+STARTUP: overview
 #+DATE: <2026-08-23 Sun>
 #+BEGIN_EXPORT html
@@ -46,12 +46,18 @@ function jumpToNearestDate() {
 </div>
 #+END_EXPORT
 
+Many native Sonoran plants can appear spontaneously in a garden,
+identify them before pulling them!
+
 ** January
 *** To remove
 **** London rocket (Sisymbrium irio)
 Winter annual. Pull young rosettes and remove before seed production.
 
 [[file:images/london_rocket.png]]
+
+London rocket can produce thousands of seeds; Arizona Invasive Plants
+recommends manual removal while young, at the basal-rosette stage.
 
 Source: [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
 
@@ -62,6 +68,10 @@ Source: [[https://extension.arizona.edu/publication/january-monthly-gardening-gu
 
 **** Stinknet (Oncosiphon pilulifer)
 Monitor newly emerging rosettes after winter rain; bag pulled plants.
+
+Stinknet is a rapidly spreading invasive annual in southern Arizona.
+University of Arizona guidance emphasizes early detection, repeated
+control, and preventing seed spread. Do not burn it.
 
 Source: [[https://extension.arizona.edu/publication/stinknet-southern-arizona][UA Cooperative Extension — Stinknet in Southern Arizona]]
 
@@ -127,7 +137,9 @@ Source: [[https://extension.arizona.edu/topics/stinknet][UA Cooperative Extensio
 **** Buffelgrass (Cenchrus ciliaris)
 Inspect landscaped and disturbed areas; remove before seed dispersal where feasible.
 
-Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
+Buffelgrass and other invasive grasses can become serious wildfire
+fuels. Prioritize removal around structures and in defensible-space
+zones. Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
 
 *** To sustain plant
 **** Parry's penstemon (Penstemon parryi)
@@ -186,6 +198,10 @@ Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension �
 **** Buffelgrass (Cenchrus ciliaris)
 Inspect before seed dispersal; cured grass is highly flammable.
 
+Buffelgrass and other invasive grasses can become serious wildfire
+fuels. Prioritize removal around structures and in defensible-space
+zones.
+
 Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
 
 **** Horse purslane (Trianthema portulacastrum)
@@ -221,13 +237,18 @@ Remove young plants before they spread and seed.
 Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
 
 **** Buffelgrass (Cenchrus ciliaris)
-Dried grass can become major fire fuel; prioritize plants around structures and access routes.
+Dried grass can become major fire fuel; prioritize plants around
+structures and access routes.
 
 Source: [[https://extension.arizona.edu/topics/weeds][UA Cooperative Extension — Weeds]]
 
 *** To sustain plant
 **** Desert willow (Chilopsis linearis)
-Summer-flowering native tree; provide appropriate supplemental water during establishment.
+Summer-flowering native tree; provide appropriate supplemental water
+during establishment.
+
+Puncturevine is easiest to manage before its characteristic spiny burs
+mature.
 
 [[file:images/desert_willow.jpg]]
 
@@ -242,6 +263,10 @@ Source: [[https://aznps.com/the-plant-list/?species=justicia+californica][Arizon
 *** To remove
 **** Palmer amaranth / carelessweed (Amaranthus palmeri)
 Summer annual; remove before mature seed production.
+
+Palmer amaranth is native to Arizona, but it can still be an unwanted
+garden weed; "remove" here means remove where it is unwanted, not
+eradicate the native species from the landscape.
 
 [[file:images/palmer_amaranth.webp]]
 
@@ -433,14 +458,6 @@ Native low-water wildflower; protect desirable volunteers.
 Source: [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizona Native Plant Society — Desert marigold]]
 
 
-* Identification notes
-
-London rocket can produce thousands of seeds; Arizona Invasive Plants recommends manual removal while young, at the basal-rosette stage.
-Stinknet is a rapidly spreading invasive annual in southern Arizona. University of Arizona guidance emphasizes early detection, repeated control, and preventing seed spread. Do not burn it.
-Buffelgrass and other invasive grasses can become serious wildfire fuels. Prioritize removal around structures and in defensible-space zones.
-Puncturevine is easiest to manage before its characteristic spiny burs mature.
-Palmer amaranth is native to Arizona, but it can still be an unwanted garden weed; "remove" here means remove where it is unwanted, not eradicate the native species from the landscape.
-Many native Sonoran plants can appear spontaneously in a garden. Identify them before pulling them.
 
 * General Notes
 
