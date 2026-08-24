@@ -1,5 +1,5 @@
 #+TITLE: Tucson Sonoran Desert Garden Calendar
-#+AUTHOR: Mathieu Renzo w/ chatGPT
+#+AUTHOR: Mathieu Renzo + LLMs
 #+OPTIONS: title:nil
 #+STARTUP: overview
 #+DATE: <2026-08-23 Sun>
@@ -114,6 +114,7 @@ Native shrub; a good time to establish container-grown plants before extreme hea
 [[file:images/fairy_duster.jpg]]
 
 Source: [[https://aznps.com/the-plant-list/?species=calliandra+eriophylla][Arizona Native Plant Society — Fairy duster]]
+
 
 ** March
 *** To remove
@@ -453,21 +454,19 @@ Native low-water wildflower; protect desirable volunteers.
 Source: [[https://aznps.com/the-plant-list/?species=baileya+multiradiata][Arizona Native Plant Society — Desert marigold]]
 
 
-
 * General Notes
 
-** References
-
-[[https://extension.arizona.edu/topics/weeds][University of Arizona Cooperative Extension — Weeds]]
-[[https://extension.arizona.edu/programs/pima-county-invasive-species-program][Pima County Invasive Species Program]]
-[[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
-[[https://extension.arizona.edu/publication/stinknet-southern-arizona][University of Arizona Cooperative Extension — Stinknet in Southern Arizona]]
-[[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
-[[https://aznps.com/the-plant-list/][Arizona Native Plant Society — The Plant List]]
-[[https://www.tucsonaz.gov/files/sharedassets/public/v/1/city-services/tucson-water/public-education-and-outreach/documents/cot_landscape_maintenance_manual_2021.pdf][City of Tucson — Landscape Maintenance Manual]]
-[[https://tucsonaudubon.org/wp-content/uploads/2023/04/FNL-CONTROLLING-BACKYARD-WEEDS.pdf][Tucson Audubon — Guide to Controlling Backyard Weeds]]
-
 ** Disclaimer
-This is a practical garden calendar, not a regulatory invasive-species list. For regulated
-or potentially hazardous plants, follow current Pima County, Arizona, and University of
-Arizona guidance.
+This is a practical garden calendar, not a regulatory invasive-species
+list. For regulated or potentially hazardous plants, follow current
+Pima County, Arizona, and University of Arizona guidance.
+
+** References
+- [[https://extension.arizona.edu/topics/weeds][University of Arizona Cooperative Extension — Weeds]]
+- [[https://extension.arizona.edu/programs/pima-county-invasive-species-program][Pima County Invasive Species Program]]
+- [[https://azinvasiveplants.arizona.edu/invasive-plant/london-rocket][Arizona Invasive Plants — London rocket]]
+- [[https://extension.arizona.edu/publication/stinknet-southern-arizona][University of Arizona Cooperative Extension — Stinknet in Southern Arizona]]
+- [[https://extension.arizona.edu/sites/default/files/2026-04/Native_Plants_Tucson_Area_HGT.pdf][Pima County Master Gardeners — Native Plants of the Tucson Area]]
+- [[https://aznps.com/the-plant-list/][Arizona Native Plant Society — The Plant List]]
+- [[https://www.tucsonaz.gov/files/sharedassets/public/v/1/city-services/tucson-water/public-education-and-outreach/documents/cot_landscape_maintenance_manual_2021.pdf][City of Tucson — Landscape Maintenance Manual]]
+- [[https://tucsonaudubon.org/wp-content/uploads/2023/04/FNL-CONTROLLING-BACKYARD-WEEDS.pdf][Tucson Audubon — Guide to Controlling Backyard Weeds]]
