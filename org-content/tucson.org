@@ -5,31 +5,26 @@
 #+DATE: <2026-08-23 Sun>
 #+BEGIN_EXPORT html
 <script>
-function jumpToNearestDate() {
-  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+function jumpToCurrentMonth() {
+  // Array of month names matching your HTML IDs
+  const months = [
+    "january", "february", "march", "april", "may", "june",
+    "july", "august", "september", "october", "november", "december"
+  ];
 
-  let closest = null;
-  let closestDiff = Infinity;
+  // Get the current month (0-11) and find the matching ID
+  const currentMonthIndex = new Date().getMonth();
+  const currentMonthId = months[currentMonthIndex];
 
-  for (const h of headers) {
-    const ts = h.querySelector("span.timestamp");
-    if (!ts) continue;
+  // Find the header element with that ID
+  const targetHeader = document.getElementById(currentMonthId);
 
-    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
-    if (!match) continue;
-
-    const parsed = new Date(match[1] + "T00:00:00");
-    const diff = Math.abs(parsed - today);
-
-    if (diff < closestDiff) {
-      closestDiff = diff;
-      closest = h;
-    }
+  // If the header exists on the page, scroll to it
+  if (targetHeader) {
+    targetHeader.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else {
+    console.log(`Could not find a header with id="${currentMonthId}"`);
   }
-
-  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 </script>
 #+END_EXPORT
@@ -38,9 +33,9 @@ function jumpToNearestDate() {
 
 #+BEGIN_EXPORT html
 <div style="text-align: center;">
-<button onclick="jumpToNearestDate()" title="Jump to today">
+<button onclick="jumpToCurrentMonth()" title="Current Month">
   <a href="javascript:void(0);" title="Jump to today">
-    <i class="fa-solid fa-calendar-day"> Jump to today </i> <i class="fa-solid fa-calendar-day"></i>
+    <i class="fa-solid fa-calendar-day"> Current Month </i> <i class="fa-solid fa-calendar-day"></i>
   </a>
 </button>
 </div>
